@@ -1,0 +1,60 @@
+html,body{
+	height: 100%;
+
+
+}
+
+
+/* --------------Layout de Navegação--------------------*/
+
+/* estilizando a navbar de navegaçaõ do topo*/
+nav.navbar-fundomenu{
+
+	background:#2E2E2E; /*definindo a cor de fundo do menu topo*/
+	padding: 15px 0px;/*definindo o espaçamento do fundo-menu*/	
+	border:none;
+	background: rgba(0, 0, 0, 0.8);/*definindo o nível de opacidadce da cor background*/
+}
+
+.navbar-brand{ /*configuração padrão do bootstrap para deixar o logo centralizado do lado esquerdo da navbar
+	7,5 é a divisão do padding do nav.navbar-fundo de 15px*/
+	padding: 7.5px 0px;
+		
+}
+.logo-menu{
+	height: 35px;
+	width: 170px;
+	background: url('img/logomenu.png')no-repeat;
+	display: block;
+	background-size: contain;/*se ajusta com o tamanho definido pela classe logo-menu*/ 
+	color:transparent;/*mantem a palavra Casa do Computador definido no html pelo Span escondida e so´aparecerá para 
+	leitores de texto*/
+}
+.navbar-default .navbar-nav>li>a {  /* definindo a cor das letras do menu da navbar  através da classe navbar
+-default que está no html passando para a classe navbar-nav selecionando o filho li dessas classes e o filho a
+da li*/
+	color: white;
+
+}
+
+.navbar-default .navbar-nav>li>a:hover {  /* definindo a cor das letras ao paasar
+o mouse no menu da navbar  através da classe navbar-default que está no html passando para a classe navbar-nav selecionando
+ o filho li dessas classes e o filho da li*/
+	color: orange;
+
+}
+.divisor{
+
+	background: white;
+	height: 15px;
+	width: 1px;
+	margin: 18px 10px;
+
+}
+
+/* fim da estilização da navbar de navegaçaõ do topo*/
+
+
+
+/* --------------Tipografia--------------------*/
+
