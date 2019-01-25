@@ -11,7 +11,7 @@ html,body{
 nav.navbar-fundomenu{
 
 	background:#2E2E2E; /*definindo a cor de fundo do menu topo*/
-	padding: 15px 0px;/*definindo o espaçamento do fundo-menu*/	
+	padding: 0px 0px;/*definindo o espaçamento do fundo-menu*/	
 	border:none;
 	background: rgba(0, 0, 0, 0.8);/*definindo o nível de opacidadce da cor background*/
 }
@@ -19,6 +19,8 @@ nav.navbar-fundomenu{
 .navbar-brand{ /*configuração padrão do bootstrap para deixar o logo centralizado do lado esquerdo da navbar
 	7,5 é a divisão do padding do nav.navbar-fundo de 15px*/
 	padding: 7.5px 0px;
+
+
 		
 }
 .logo-menu{
@@ -30,7 +32,8 @@ nav.navbar-fundomenu{
 	color:transparent;/*mantem a palavra Casa do Computador definido no html pelo Span escondida e so´aparecerá para 
 	leitores de texto*/
 }
-.navbar-default .navbar-nav>li>a {  /* definindo a cor das letras do menu da navbar  através da classe navbar
+
+.navbar-default .navbar-nav>li>a {  /* definindo a cor das letras do menu do topo da navbar  através da classe navbar
 -default que está no html passando para a classe navbar-nav selecionando o filho li dessas classes e o filho a
 da li*/
 	color: white;
@@ -43,6 +46,12 @@ o mouse no menu da navbar  através da classe navbar-default que está no html p
 	color: orange;
 
 }
+
+.navbar-default .navbar-nav>.dropdown>ul>li>a:hover {/*cor de fundo ao passar o mouse nos submenus dropdows*/
+   background-color: #e7e7e7;
+    
+   
+}
 .divisor{
 
 	background: white;
@@ -51,6 +60,9 @@ o mouse no menu da navbar  através da classe navbar-default que está no html p
 	margin: 18px 10px;
 
 }
+
+
+
 
 /* fim da estilização da navbar de navegaçaõ do topo*/
 
