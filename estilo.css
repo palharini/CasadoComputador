@@ -1,7 +1,5 @@
 html,body{
 	height: 100%;
-
-
 }
 
 
@@ -9,20 +7,20 @@ html,body{
 
 /* estilizando a navbar de navegaçaõ do topo*/
 nav.navbar-fundomenu{
-
 	background:#2E2E2E; /*definindo a cor de fundo do menu topo*/
 	padding: 0px 0px;/*definindo o espaçamento do fundo-menu*/	
 	border:none;
 	background: rgba(0, 0, 0, 0.8);/*definindo o nível de opacidadce da cor background*/
 }
 
-.navbar-brand{ /*configuração padrão do bootstrap para deixar o logo centralizado do lado esquerdo da navbar
+
+/*configuração padrão do bootstrap para deixar o logo centralizado do lado esquerdo da navbar
 	7,5 é a divisão do padding do nav.navbar-fundo de 15px*/
-	padding: 7.5px 0px;
-
-
-		
+.navbar-brand{ 
+	padding: 7.5px 0px;	
 }
+
+
 .logo-menu{
 	height: 35px;
 	width: 170px;
@@ -33,35 +31,35 @@ nav.navbar-fundomenu{
 	leitores de texto*/
 }
 
-.navbar-default .navbar-nav>li>a {  /* definindo a cor das letras do menu do topo da navbar  através da classe navbar
+
+/* definindo a cor das letras do menu do topo da navbar  através da classe navbar
 -default que está no html passando para a classe navbar-nav selecionando o filho li dessas classes e o filho a
 da li*/
+.navbar-default .navbar-nav>li>a {  
 	color: white;
-
 }
 
-.navbar-default .navbar-nav>li>a:hover {  /* definindo a cor das letras ao paasar
+
+/* definindo a cor das letras ao passar
 o mouse no menu da navbar  através da classe navbar-default que está no html passando para a classe navbar-nav selecionando
  o filho li dessas classes e o filho da li*/
+.navbar-default .navbar-nav>li>a:hover {  
 	color: orange;
-
 }
 
-.navbar-default .navbar-nav>.dropdown>ul>li>a:hover {/*cor de fundo ao passar o mouse nos submenus dropdows*/
-   background-color: #e7e7e7;
-    
-   
+
+/*cor de fundo ao passar o mouse nos submenus dropdows*/
+.navbar-default .navbar-nav>.dropdown>ul>li>a:hover {
+   background-color: #e7e7e7; 
 }
+
+
 .divisor{
-
 	background: white;
 	height: 15px;
 	width: 1px;
 	margin: 18px 10px;
-
 }
-
-
 
 
 /* fim da estilização da navbar de navegaçaõ do topo*/
