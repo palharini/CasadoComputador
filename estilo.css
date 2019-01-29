@@ -52,7 +52,7 @@ o mouse no menu da navbar  através da classe navbar-default que está no html p
     
    
 }
-.divisor{
+.divisor{/*dividindo os menus*/
 
 	background: white;
 	height: 15px;
@@ -60,9 +60,10 @@ o mouse no menu da navbar  através da classe navbar-default que está no html p
 	margin: 18px 10px;
 
 }
-
-
-
+.topo{
+	height: 600px;
+	width: 900px;
+}
 
 /* fim da estilização da navbar de navegaçaõ do topo*/
 
