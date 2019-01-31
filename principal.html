@@ -4,13 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Casa do Computador</title>
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="estilo.css" rel="stylesheet">
-
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,84 +17,143 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+  </head>     
+
   <body>
-
-<!--* configurando a navbar de navegaçaõ do topo-->
-    <nav class="navbar navbar-default navbar-fundomenu">
-
-
+<!-- ====================================================================-->
+<!-- (CABEÇALHO) configurando a navbar de navegação do topo ================================ -->
+    <nav class="navbar-default navbar-fundomenu">
         <div class="container">
-
-        
+            
             <div class="navbar-header">
 
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"data-target="#barra-navegacao">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
+                <!-- Logo -->
                 <div class="navbar-brand">
+
                   <span class="logo-menu">Casa do Computador</span>
 
                 </div>
-
+                <!-- /Logo -->  
+          
+                <!-- Botão de Alternancia(responsivo) -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao"><!--criado o botão com a class bootstrap navbar-toggle collapsed, usando o atributo data-toggle="collapse" conseguimos esconder os menus que a data-target="#barra-navegação" está apontando-->
+                           <!-- (sr-only)> <span> apenas para leitores de tela -->
+                    <span class="sr-only">Aternar navegação</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- /Botão de Alternancia --> 
 
             </div>
+			
+			<!-- (MENUS) div que irá fornecer a estrutura completa para os menus de navegação -->
+            <div class="collapse navbar-collapse" id="barra-navegacao">
 
-            <div class="collapse navbar-collapse" id="barra-navegacao"><!--div que irá fornecer a estrutura completa para os menus de navegação-->
-
-                <ul class="nav navbar-nav navbar-right">
-
-                    <li><a href="#">Home</a></li>
-                    <li class="divisor" role="separator"></li>
-                    <li><a href="#">Quem somos</a></li>
-                    <li class="divisor" role="separator"></li>
-                    <li class="dropdown">
-<<<<<<< HEAD
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Entrar<span class="caret"></span> </a>
-
-                          <ul class="dropdown-menu">
-                            
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Quem somos</a></li>
-                            <li><a href="#">Fim do Projeto</a></li>
-
-                          </ul>
-=======
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Entrar<span class="caret"></span> </a>
-                    
-                    <!-- Itens de acesso  -->
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Login</a></li>
-                        <li><a href="#">Cadastre-se</a></li>
-                    </ul>
->>>>>>> 1e17d5e188c3220883469d01c46c9aa532ca7861
-                    </li>
-                
+                <ul class="nav navbar-nav navbar-right" >
+                      <li><a href="">Home</a></li>
+                      <li><a href="">Quem somos</a></li>
+    					        <li><a href="">Serviços</a></li>
+    					        <li><a href="">Fale conosco</a></li>
+                      <li class="divisor visible-sm-block visible-md-block visible-lg-block" role="separator"></li><!--divisor do menu e a class visible esconde ele para resolução de tela "celular"--> 
+                      <li class="dropdown">
+    						          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Entrar<span class="caret"></span></a>
+						<!-- Itens de acesso do Entrar  -->
+                  						<ul class="dropdown-menu"><!--aqui é a definição dos submenus do entrar ou menus dropdown-->
+                  							<li><a href="">Login</a></li>
+                  							<li><a href="">Cadastre-se</a></li>
+                  						</ul>
+	   				<!-- /Itens de acesso do Entrar  -->
+                      </li>
                 </ul>
               
-            </div> <!-- fim da div que irá fornecer a estrutura completa para os menus de navegação-->      
+            </div>    
+			<!-- (/MENUS) fim da div que irá fornecer a estrutura completa para os menus de navegação -->
 
         </div>
 
     </nav>
+
   <!--* fim da configuração navbar de navegaçaõ do topo-->
-<div id="fundo-externo">
-    <div id="fundo">
-        <img src="img/logotopo.png" alt="" />
+  <!--inicio do logo topo-->
+   <!-- <div id="fundo-externo">
+        <div id="fundo">
+          <img src="img/logotopo.png" alt="" />
+        </div>
+    </div><-->
+    <!--fim do logo topo-->
+
+<!-- (/CABEÇALHO) configurando a navbar de navegação do topo ================================-->
+<!-- =================================================================== -->
+  
+
+<!-- ====================================================================-->
+<!-- (CORPO) ==============================================================-->
+	<!-- Corpo da pagina -->
+    <div class="container">
+
+        <div class="page-header">
+
+          <h3>olá</h3>
+        </div>
+
+<!--O mais externo <div>:
+Os carrosséis exigem o uso de um id (neste caso id="myCarousel") para que os controles do carrossel funcionem adequadamente.
+O class="carousel" especifica que isso <div>contém um carrossel. A .slide classe adiciona um efeito de transição e animação de CSS, o que faz com que os itens sejam exibidos ao mostrar um novo item. Omita esta classe se você não quiser este efeito.
+O data-ride="carousel" atributo informa ao Bootstrap para começar a animação do carrossel imediatamente quando a página é carregada.-->
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+                <ol class="carousel-indicators"><!--Os indicadores são especificados em uma lista ordenada com classe .carousel-indicators.-->
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li> <!--O data-targetatributo aponta para o id do carrossel. O data-slide-to atributo especifica para qual slide ir, ao clicar no ponto específico.-->
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+  <!-- Wrapper for slides -->
+        <div class="carousel-inner"><!--Os slides são especificados em uma <div>classe .carousel-inner.-->
+                <div class="item active"><!--A .active turma precisa ser adicionada a um dos slides. Caso contrário, o carrossel não será visível. -->
+                    <img src="img/carrosel1.png" alt="carrossel1">
+                </div>
+
+                <div class="item"><!--O conteúdo de cada slide é definido em uma <div>classe com .item. Isso pode ser texto ou imagens.-->
+                    <img src="img/carrosel2.png" alt="carrossel2">
+                </div>
+
+              
+        </div>
+
+  <!-- Left and right controls  Este código adiciona os botões "left" e "right" que permitem ao usuário ir e voltar entre os slides manualmente. O data-slide-atributo aceita as palavras-chave "prev"ou "next", o que altera a posição do slide em relação à sua posição atual.-->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+        </a>
     </div>
-</div>
-    
-
-      <div class="container">
-
-          <div class="page-header">
-                <h1>Casa do Computador</h1>
-          </div>
           
-      </div>
+
+
+
+    </div><!--fim do Container-->
+    <!-- /Corpo da pagina -->
+<!-- (/CORPO) ==============================================================-->
+<!-- ====================================================================-->
+
+
+<!-- ====================================================================-->
+<!-- (RODAPE) ==============================================================-->
+	<!-- Rodapé -->
+	<footer>
+		<div>
+			Rodape
+		</div>
+	</footer>
+	<!-- /Rodapé -->
+<!-- (/RODAPE) ==============================================================-->
+<!-- =====================================================================-->
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
