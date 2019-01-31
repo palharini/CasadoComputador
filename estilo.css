@@ -5,7 +5,7 @@ html,body{
 
 /* --------------Layout de Navegação--------------------*/
 
-/* estilizando a navbar de navegaçaõ do topo*/
+/* --------estilizando a navbar de navegaçaõ do topo---------*/
 nav.navbar-fundomenu{
 	background:#2E2E2E; /*definindo a cor de fundo do menu topo*/
 	padding: 0px 0px;/*definindo o espaçamento do fundo-menu*/	
@@ -80,12 +80,93 @@ o mouse no menu da navbar  através da classe navbar-default que está no html p
     position: absolute;
 }
 /* fim configuração da imagem com logo  do computador e a pessoa estérica*/
-/* fim da estilização a navbar de navegaçaõ do topo*/
+/* --------fim da estilização a navbar de navegaçaõ do topo----------*/
 
-/* inicio do Carroussel*/
 
-.item img{
-	width: 100%;
+/*inicio estilização do carrossel
+-------------------------------------------------- */
+
+/* Carousel class básica */
+.carousel { /*definição do tamanho do carousel em altura e margim*/
+  height: 500px;
+  margin-bottom: 60px;/*a margin-bottom foi adicionada para hever um espaço de 60px abaixo do carrossel*/
+  
+
+}
+/* Desde o posicionamento da imagem, precisamos ajudar a legenda
+.carousel-caption {
+  z-index: 10;
+}*/
+
+/* Declarar alturas por causa do posicionamento do elemento img */
+.carousel .item {
+  height: 500px;
+  background-color: #777;/*cor de de fundo do background  carousel item*/
+
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;/*determinando o tamanho da imagem que está dentro do carousel deve ser o mesmo valor 
+  que o carousel .item e .carousel*/
+}
+
+
+/*CONTEÚDO DE MARKETING
+-------------------------------------------------- */
+
+/*  Centro alinhar o texto dentro das três colunas abaixo do carrossel 
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}*/
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* Media queries para responsividade do carrossel
+-------------------------------------------------- */
+
+
+
+  /*aumentar o tamanho do carrossel
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+    usado junto com o carrousel caption para formatação de um paragrafo
+  }
+*/
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
 }
 /*Fim do Carroussel
 
