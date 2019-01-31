@@ -170,5 +170,15 @@ o mouse no menu da navbar  através da classe navbar-default que está no html p
 }
 /*Fim do Carroussel
 
+/*-----inicio do rodapé----*/
+
+footer{
+  background:black;
+  position: relative;
+  padding: 50px 0px 20px 0px;
+}
+
+/*-----fim do rodapé----*/
+
 /* --------------Tipografia--------------------*/
 
