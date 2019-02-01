@@ -8,7 +8,7 @@ html,body{
 /* --------estilizando a navbar de navegaçaõ do topo---------*/
 nav.navbar-fundomenu{
 	background:#2E2E2E; /*definindo a cor de fundo do menu topo*/
-	padding: 0px 0px;/*definindo o espaçamento do fundo-menu*/	
+	padding: 20px 15px;/*definindo o espaçamento do fundo-menu*/	
 	background: rgba(0, 0, 0, 0.8);/*definindo o nível de opacidadce da cor background*/
 }
 
@@ -42,13 +42,13 @@ da li*/
 /* definindo a cor das letras ao passar
 o mouse no menu da navbar  através da classe navbar-default que está no html passando para a classe navbar-nav selecionando
  o filho li dessas classes e o filho da li*/
-.navbar-default .navbar-nav>li>a:hover {  
+.navbar-inverse .navbar-nav>li>a:hover {  
 	color: orange;
 }
 
 
 /*cor de fundo ao passar o mouse nos submenus dropdows*/
-.navbar-default .navbar-nav>.dropdown>ul>li>a:hover {
+.navbar-inverse .navbar-nav>.dropdown>ul>li>a:hover {
    background-color: #e7e7e7; 
 }
 
@@ -89,8 +89,8 @@ o mouse no menu da navbar  através da classe navbar-default que está no html p
 /* Carousel class básica */
 .carousel { /*definição do tamanho do carousel em altura e margim*/
   height: 500px;
-  margin-bottom: 60px;/*a margin-bottom foi adicionada para hever um espaço de 60px abaixo do carrossel*/
-  
+  /*margin-bottom: 60px;/*a margin-bottom foi adicionada para hever um espaço de 60px abaixo do carrossel*/
+  margin: 100px 60px;
 
 }
 /* Desde o posicionamento da imagem, precisamos ajudar a legenda
