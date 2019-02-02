@@ -1,25 +1,26 @@
+/**************************
+* LAYOUT DE NAVEGAÇÃO
+*
+*/
+
 html,body{
 	height: 100%;
 }
 
-
-/* --------------Layout de Navegação--------------------*/
-
-/* --------estilizando a navbar de navegaçaõ do topo---------*/
+/*** Barra de menu / CABEÇALHO / <nav> ***/
 nav.navbar-fundomenu{
 	background:#2E2E2E; /*definindo a cor de fundo do menu topo*/
-	padding: 20px 15px;/*definindo o espaçamento do fundo-menu*/	
+	padding: 20px 20px;/*definindo o espaçamento do fundo-menu*/	
 	background: rgba(0, 0, 0, 0.8);/*definindo o nível de opacidadce da cor background*/
 }
 
-
-/*configuração padrão do bootstrap para deixar o logo centralizado do lado esquerdo da navbar
-	7,5 é a divisão do padding do nav.navbar-fundo de 15px*/
+/*** Logo da barra de menu / CABEÇALHO / <div 1.1.1> ***/
 .navbar-brand{ 
-	padding: 7.5px 0px;	
+  /*configuração padrão do bootstrap para deixar o logo centralizado do lado esquerdo da navbar 7,5 é a divisão do padding do nav.navbar-fundo de 15px*/
+	padding: 7.5px 0px;	 
 }
 
-/*configuração do logo casa do computador que está dentro do menu navbar*/
+/*** Logo da barra de menu / CABEÇALHO / <span> ***/
 .logo-menu{
 	height: 35px;
 	width: 170px;
@@ -30,42 +31,42 @@ nav.navbar-fundomenu{
 	leitores de texto*/
 }
 
-
-/* definindo a cor das letras do menu do topo da navbar  através da classe navbar
--default que está no html passando para a classe navbar-nav selecionando o filho li dessas classes e o filho a
-da li*/
-.navbar-default .navbar-nav>li>a {  
+/*** Itens do menu (cor fixa dos itens) / CABEÇALHO / <a> ***/
+.navbar-inverse .navbar-nav>li>a {  
 	color: white;
 }
 
-
-/* definindo a cor das letras ao passar
-o mouse no menu da navbar  através da classe navbar-default que está no html passando para a classe navbar-nav selecionando
- o filho li dessas classes e o filho da li*/
+/*** Itens do menu (cor ao passar do mouse) / CABEÇALHO / <a> ***/
 .navbar-inverse .navbar-nav>li>a:hover {  
 	color: orange;
 }
 
-
-/*cor de fundo ao passar o mouse nos submenus dropdows*/
+/*** Itens do dropdown (apenas em janela web) / CABEÇALHO / <ul> ***/ 
 .navbar-inverse .navbar-nav>.dropdown>ul>li>a:hover {
-   background-color: #e7e7e7; 
+   background-color: orange; 
 }
 
-.divisor{/*dividindo os menus*/
 
+
+
+
+
+
+
+/*dividindo os menus*/
+.divisor{
 	background: white;
 	height: 15px;
 	width: 1px;
 	margin: 18px 10px;
 }
+
 /* inicio configuração da imagem com logo  do computador e a pessoa estérica*/
 #fundo-externo {
     overflow: hidden; /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
     width: 100%;
     height: 100%;
     position: relative; /* criamos um contexto para posicionamento */
-
 }
 
 #fundo {
@@ -73,7 +74,6 @@ o mouse no menu da navbar  através da classe navbar-default que está no html p
     width: 100%;
     height: 100%;
 }
-
 
 #fundo img {
     width: 100%; /* com isso imagem ocupará toda a largura da tela. Se colocarmos height: 100% também, a imagem irá distorcer */
@@ -113,11 +113,19 @@ o mouse no menu da navbar  através da classe navbar-default que está no html p
   que o carousel .item e .carousel*/
 }
 
+/* 
+*
+* LAYOUT DE NAVEGAÇÃO
+***************************/
 
-/*CONTEÚDO DE MARKETING
--------------------------------------------------- */
 
-/*  Centro alinhar o texto dentro das três colunas abaixo do carrossel 
+
+/*****************************
+* CONTEÚDO DE MARKETING
+*
+*/
+
+/* Centro alinhar o texto dentro das três colunas abaixo do carrossel 
 .marketing .col-lg-4 {
   margin-bottom: 20px;
   text-align: center;
@@ -144,41 +152,59 @@ o mouse no menu da navbar  através da classe navbar-default que está no html p
   letter-spacing: -1px;
 }
 
+/*-----inicio do rodapé----*/
+footer{
+  background:black;
+  position: relative;
+  padding: 50px 0px 20px 0px;
+}
+/*-----fim do rodapé----*/
 
-/* Media queries para responsividade do carrossel
--------------------------------------------------- */
+/*
+*
+* CONTEÚDO DE MARKETING
+******************************/
 
 
 
-  /*aumentar o tamanho do carrossel
+
+/*****************
+* MEDIA QUERIES
+*
+*/
+
+/*aumentar o tamanho do carrossel
   .carousel-caption p {
     margin-bottom: 20px;
     font-size: 21px;
     line-height: 1.4;
     usado junto com o carrousel caption para formatação de um paragrafo
   }
-*/
+
   .featurette-heading {
     font-size: 50px;
   }
 }
-
+*/
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 120px;
   }
 }
-/*Fim do Carroussel
 
-/*-----inicio do rodapé----*/
+/*
+*
+* MEDIA QUERIES
+*****************/
 
-footer{
-  background:black;
-  position: relative;
-  padding: 50px 0px 20px 0px;
-}
 
-/*-----fim do rodapé----*/
 
-/* --------------Tipografia--------------------*/
+/*************
+* TIPOGRAFIA
+*
+*/
 
+/*
+*
+* TIPOGRAFIA
+**************/
