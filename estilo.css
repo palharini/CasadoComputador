@@ -1,5 +1,5 @@
-/**************************
-* LAYOUT DE NAVEGAÇÃO
+/**********
+* LAYOUT
 *
 */
 
@@ -7,20 +7,25 @@ html,body{
 	height: 100%;
 }
 
-/*** Barra de menu / CABEÇALHO / <nav> ***/
+/* =======
+* CABEÇALHO
+*
+*/
+
+/*** Barra de menu / <nav> ***/
 nav.navbar-fundomenu{
 	background:#2E2E2E; /*definindo a cor de fundo do menu topo*/
 	padding: 20px 20px;/*definindo o espaçamento do fundo-menu*/	
 	background: rgba(0, 0, 0, 0.8);/*definindo o nível de opacidadce da cor background*/
 }
 
-/*** Logo da barra de menu / CABEÇALHO / <div 1.1.1> ***/
+/*** Logo da barra de menu / <div 1.1.1> ***/
 .navbar-brand{ 
   /*configuração padrão do bootstrap para deixar o logo centralizado do lado esquerdo da navbar 7,5 é a divisão do padding do nav.navbar-fundo de 15px*/
 	padding: 7.5px 0px;	 
 }
 
-/*** Logo da barra de menu / CABEÇALHO / <span> ***/
+/*** Logo da barra de menu / <span> ***/
 .logo-menu{
 	height: 35px;
 	width: 170px;
@@ -31,29 +36,22 @@ nav.navbar-fundomenu{
 	leitores de texto*/
 }
 
-/*** Itens do menu (cor fixa dos itens) / CABEÇALHO / <a> ***/
+/*** Itens do menu (cor fixa) / <a> ***/
 .navbar-inverse .navbar-nav>li>a {  
 	color: white;
 }
 
-/*** Itens do menu (cor ao passar do mouse) / CABEÇALHO / <a> ***/
+/*** Itens do menu (cor ao passar do mouse) / <a> ***/
 .navbar-inverse .navbar-nav>li>a:hover {  
 	color: orange;
 }
 
-/*** Itens do dropdown (apenas em janela web) / CABEÇALHO / <ul> ***/ 
+/*** Itens do dropdown (apenas em janela web) / <ul> ***/ 
 .navbar-inverse .navbar-nav>.dropdown>ul>li>a:hover {
    background-color: orange; 
 }
 
-
-
-
-
-
-
-
-/*dividindo os menus*/
+/*** Barrinha vertical que divide os itens do menu / <li> ***/ 
 .divisor{
 	background: white;
 	height: 15px;
@@ -61,49 +59,66 @@ nav.navbar-fundomenu{
 	margin: 18px 10px;
 }
 
-/* inicio configuração da imagem com logo  do computador e a pessoa estérica*/
+/*
+/* (NÃO ESTA EM USO) inicio configuração da imagem com logo  do computador e a pessoa estérica 
 #fundo-externo {
-    overflow: hidden; /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
+    overflow: hidden; /* para que não tenha rolagem se a imagem de fundo for maior que a tela 
     width: 100%;
     height: 100%;
-    position: relative; /* criamos um contexto para posicionamento */
+    position: relative; /* criamos um contexto para posicionamento 
 }
+*/
 
+/*
+(NÃO ESTA EM USO)
 #fundo {
-    /*position: fixed;  posição fixa para que a possível rolagem da tela não revele espaços em branco */
+    /*position: fixed;  posição fixa para que a possível rolagem da tela não revele espaços em branco
     width: 100%;
     height: 100%;
 }
+*/
 
+/*
+(NÃO ESTA EM USO)
 #fundo img {
-    width: 100%; /* com isso imagem ocupará toda a largura da tela. Se colocarmos height: 100% também, a imagem irá distorcer */
+    width: 100%; /* com isso imagem ocupará toda a largura da tela. Se colocarmos height: 100% também, a imagem irá distorcer 
     position: absolute;
 }
-/* fim configuração da imagem com logo  do computador e a pessoa estérica*/
-/* --------fim da estilização a navbar de navegaçaõ do topo----------*/
+/* fim configuração da imagem com logo  do computador e a pessoa estérica
+/* --------fim da estilização a navbar de navegaçaõ do topo----------
+*/
+
+/* 
+*
+* CABEÇALHO
+========= */
 
 
-/*inicio estilização do carrossel
--------------------------------------------------- */
 
-/* Carousel class básica */
+/* ======
+* CAROUSEL
+*
+*/
+
+/*** Estrutura base / <div 3> ***/
 .carousel { /*definição do tamanho do carousel em altura e margim*/
   height: 500px;
   /*margin-bottom: 60px;/*a margin-bottom foi adicionada para hever um espaço de 60px abaixo do carrossel*/
   margin: 100px 60px;
-
 }
+
 /* Desde o posicionamento da imagem, precisamos ajudar a legenda
 .carousel-caption {
   z-index: 10;
 }*/
 
-/* Declarar alturas por causa do posicionamento do elemento img */
+/*** Conteudo/imagens interna / <div 2.1 - 2.2 - 2.3> ***/
 .carousel .item {
   height: 500px;
-  background-color: #777;/*cor de de fundo do background  carousel item*/
-
+  /* (NÃO ESTA EM USO) background-color: #777;/*cor de fundo do background carousel item*/
 }
+
+/*** Conteudo/imagens interna / img ***/
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
@@ -113,10 +128,15 @@ nav.navbar-fundomenu{
   que o carousel .item e .carousel*/
 }
 
+/*
+*
+* CAROUSEL
+======= */
+
 /* 
 *
-* LAYOUT DE NAVEGAÇÃO
-***************************/
+* LAYOUT 
+**********/
 
 
 
@@ -186,6 +206,8 @@ footer{
   }
 }
 */
+/*
+(NÃO ESTA EM USO)
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 120px;
