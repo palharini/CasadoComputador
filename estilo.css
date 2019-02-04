@@ -133,6 +133,25 @@ nav.navbar-fundomenu{
 * CAROUSEL
 ======= */
 
+
+
+/* =====
+* RODAPÉ
+*
+*/
+
+/*** Estrutura base / footer ***/
+footer{
+  background:black;
+  position: relative;
+  padding: 50px 0px 20px 0px;
+}
+
+/*
+*
+* RODAPÉ
+======= */
+
 /* 
 *
 * LAYOUT 
@@ -140,6 +159,7 @@ nav.navbar-fundomenu{
 
 
 
+/* (NÃO ESTA EM USO)
 /*****************************
 * CONTEÚDO DE MARKETING
 *
@@ -159,26 +179,20 @@ nav.navbar-fundomenu{
 }*/
 
 /* Featurettes
-------------------------- */
+------------------------- 
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 80px 0; /* Space out the Bootstrap <hr> more 
 }
 
-/* Thin out the marketing headings */
+/* Thin out the marketing headings 
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
 }
 
-/*-----inicio do rodapé----*/
-footer{
-  background:black;
-  position: relative;
-  padding: 50px 0px 20px 0px;
-}
-/*-----fim do rodapé----*/
+*/
 
 /*
 *
