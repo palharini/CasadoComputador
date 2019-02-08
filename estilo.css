@@ -5,6 +5,11 @@
 
 html,body{
 	height: 100%;
+  background: url(img/capa.png),
+              url(img/ruido2.png),
+              linear-gradient(50deg,#66CDAA,#20B2AA);
+              background-attachment: fixed;/*dessa forma a imagem não se repete indefinitivamente no background*/
+
 }
 
 /* =======
@@ -107,7 +112,7 @@ nav.navbar-fundomenu{
   margin: 100px 60px;
 }
 
-/* Desde o posicionamento da imagem, precisamos ajudar a legenda
+/* Desde o posicionamento da imagem, precisamos ajustar a legenda
 .carousel-caption {
   z-index: 10;
 }*/
