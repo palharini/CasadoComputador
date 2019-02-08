@@ -109,6 +109,45 @@ nav.navbar-fundomenu{
 /*** Section de serviços ***/
 #servicos {
   padding-bottom: 20px;
+  background: white;
+}
+
+/* Selecionando a row de todos os serviços */
+.todosServicos h2, p {
+  
+} 
+
+/* Conteuso de todos serviços */
+.servicoConteudo {
+  height: 250px;
+}
+
+/* Quadro da imagem 1 */
+.servicoImg1 {
+  padding-top: 15px;
+  height: 250px;  
+  position: relative;  
+  overflow: hidden; 
+}
+
+/* Quadro da imagem 2 */
+.servicoImg2 {
+  padding-top: 40px;
+  height: 250px;  
+  position: relative;  
+  overflow: hidden; 
+}
+
+/* Quadro da imagem 3 */
+.servicoImg3 {
+  height: 250px;  
+  position: relative;  
+  overflow: hidden; 
+}
+
+/* Tratamento da imagem 1 */
+.servicoImg1 img {
+  padding-left: 20px;
 }
 
 /*=== fim_SERVIÇOS ===
