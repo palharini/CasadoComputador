@@ -1,7 +1,5 @@
-/**********
-* LAYOUT
-*
-*/
+/**************************************************
+****************** inicio_LAYOUT *****************/
 
 html,body{
 	height: 100%;
@@ -12,25 +10,23 @@ html,body{
 
 }
 
-/* =======
-* CABEÇALHO
-*
-*/
+/*=================
+=== inicio_CABEÇALHO ===*/
 
-/*** Barra de menu / <nav> ***/
+/*** Barra de menu ***/
 nav.navbar-fundomenu{
 	background:#2E2E2E; /*definindo a cor de fundo do menu topo*/
 	padding: 20px 20px;/*definindo o espaçamento do fundo-menu*/	
 	background: rgba(0, 0, 0, 0.8);/*definindo o nível de opacidadce da cor background*/
 }
 
-/*** Logo da barra de menu / <div 1.1.1> ***/
+/*** Logo da barra de menu ***/
 .navbar-brand{ 
   /*configuração padrão do bootstrap para deixar o logo centralizado do lado esquerdo da navbar 7,5 é a divisão do padding do nav.navbar-fundo de 15px*/
 	padding: 7.5px 0px;	 
 }
 
-/*** Logo da barra de menu / <span> ***/
+/*** Logo da barra de menu ***/
 .logo-menu{
 	height: 35px;
 	width: 170px;
@@ -41,22 +37,22 @@ nav.navbar-fundomenu{
 	leitores de texto*/
 }
 
-/*** Itens do menu (cor fixa) / <a> ***/
+/*** Itens do menu (cor fixa) ***/
 .navbar-inverse .navbar-nav>li>a {  
 	color: white;
 }
 
-/*** Itens do menu (cor ao passar do mouse) / <a> ***/
+/*** Itens do menu (cor ao passar do mouse) ***/
 .navbar-inverse .navbar-nav>li>a:hover {  
 	color: orange;
 }
 
-/*** Itens do dropdown (apenas em janela web) / <ul> ***/ 
+/*** Itens do dropdown (apenas em janela web) ***/ 
 .navbar-inverse .navbar-nav>.dropdown>ul>li>a:hover {
    background-color: orange; 
 }
 
-/*** Barrinha vertical que divide os itens do menu / <li> ***/ 
+/*** Barrinha vertical que divide os itens do menu ***/ 
 .divisor{
 	background: white;
 	height: 15px;
@@ -64,6 +60,116 @@ nav.navbar-fundomenu{
 	margin: 18px 10px;
 }
 
+/*=== fim_CABEÇALHO ===
+=================*/
+
+
+
+
+/*================
+=== inicio_CAROUSEL ===*/
+
+/*** Estrutura base ***/
+.carousel { /*definição do tamanho do carousel em altura e margim*/
+  height: 500px;
+  /*margin-bottom: 60px;/*a margin-bottom foi adicionada para hever um espaço de 60px abaixo do carrossel*/
+  margin: 100px 60px;
+}
+
+/* Desde o posicionamento da imagem, precisamos ajustar a legenda
+.carousel-caption {
+  z-index: 10;
+}*/
+
+/*** Conteudo/imagens interna / <div 2.1 - 2.2 - 2.3> ***/
+.carousel .item {
+  height: 500px;
+  /* (NÃO ESTA EM USO) background-color: #777;/*cor de fundo do background carousel item*/
+}
+
+/*** Conteudo/imagens interna / img ***/
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;/*determinando o tamanho da imagem que está dentro do carousel deve ser o mesmo valor 
+  que o carousel .item e .carousel*/
+}
+
+/*=== fim_CAROUSEL ===
+================*/
+
+
+
+
+/*===============
+=== inicio_SERVIÇOS ===*/
+
+/*** Section de serviços ***/
+#servicos {
+  padding-bottom: 20px;
+}
+
+/*=== fim_SERVIÇOS ===
+================*/
+
+
+
+
+/*===============
+=== inicio_RODAPÉ ===*/
+
+/*** Estrutura base ***/
+footer{
+  background:black;
+  position: relative;
+  padding: 50px 0px 20px 0px;
+}
+
+/*=== fim_RODAPÉ ===
+===============*/
+
+/***************** fim_LAYOUT *****************
+*************************************************/
+
+
+
+
+/**********************************************************
+****************** inicio_MEDIA QUERIES *****************/
+
+
+/***************** fim_MEDIA QUERIES ******************
+**********************************************************/
+
+
+
+
+/******************************************************
+****************** inicio_TIPOGRAFIA *****************/
+
+
+/***************** fim_TIPOGRAFIA ******************
+******************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================================================================*/
 /*
 /* (NÃO ESTA EM USO) inicio configuração da imagem com logo  do computador e a pessoa estérica 
 #fundo-externo {
@@ -93,74 +199,31 @@ nav.navbar-fundomenu{
 /* --------fim da estilização a navbar de navegaçaõ do topo----------
 */
 
-/* 
-*
-* CABEÇALHO
-========= */
 
 
 
-/* ======
-* CAROUSEL
-*
+
+/*aumentar o tamanho do carrossel
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+    usado junto com o carrousel caption para formatação de um paragrafo
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
 */
-
-/*** Estrutura base / <div 3> ***/
-.carousel { /*definição do tamanho do carousel em altura e margim*/
-  height: 500px;
-  /*margin-bottom: 60px;/*a margin-bottom foi adicionada para hever um espaço de 60px abaixo do carrossel*/
-  margin: 100px 60px;
-}
-
-/* Desde o posicionamento da imagem, precisamos ajustar a legenda
-.carousel-caption {
-  z-index: 10;
-}*/
-
-/*** Conteudo/imagens interna / <div 2.1 - 2.2 - 2.3> ***/
-.carousel .item {
-  height: 500px;
-  /* (NÃO ESTA EM USO) background-color: #777;/*cor de fundo do background carousel item*/
-}
-
-/*** Conteudo/imagens interna / img ***/
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 500px;/*determinando o tamanho da imagem que está dentro do carousel deve ser o mesmo valor 
-  que o carousel .item e .carousel*/
-}
-
 /*
-*
-* CAROUSEL
-======= */
-
-
-
-/* =====
-* RODAPÉ
-*
+(NÃO ESTA EM USO)
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
 */
-
-/*** Estrutura base / footer ***/
-footer{
-  background:black;
-  position: relative;
-  padding: 50px 0px 20px 0px;
-}
-
-/*
-*
-* RODAPÉ
-======= */
-
-/* 
-*
-* LAYOUT 
-**********/
 
 
 
@@ -203,49 +266,3 @@ footer{
 *
 * CONTEÚDO DE MARKETING
 ******************************/
-
-
-
-
-/*****************
-* MEDIA QUERIES
-*
-*/
-
-/*aumentar o tamanho do carrossel
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
-    usado junto com o carrousel caption para formatação de um paragrafo
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-*/
-/*
-(NÃO ESTA EM USO)
-@media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
-}
-
-/*
-*
-* MEDIA QUERIES
-*****************/
-
-
-
-/*************
-* TIPOGRAFIA
-*
-*/
-
-/*
-*
-* TIPOGRAFIA
-**************/
