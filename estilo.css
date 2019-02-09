@@ -3,9 +3,9 @@
 
 html,body{
 	height: 100%;
-  background: url(img/capa.png),
-              url(img/ruido2.png),
-              linear-gradient(50deg,#66CDAA,#20B2AA);
+  background: url(img/imgcapa2.png),
+              
+              linear-gradient(90deg,#9400D3,#00BFFF);
               background-attachment: fixed;/*dessa forma a imagem não se repete indefinitivamente no background*/
 
 }
