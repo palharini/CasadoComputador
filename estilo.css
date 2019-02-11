@@ -3,9 +3,9 @@
 
 html,body{
 	height: 100%;
-  background: url(img/imgcapa2.png),
-              
-              linear-gradient(90deg,#9400D3,#00BFFF);
+  background: url(img/capa.png),
+              url(img/ruido2.png),
+              linear-gradient(50deg,#66CDAA,#20B2AA);
               background-attachment: fixed;/*dessa forma a imagem não se repete indefinitivamente no background*/
 
 }
@@ -112,42 +112,15 @@ nav.navbar-fundomenu{
   background: white;
 }
 
-/* Selecionando a row de todos os serviços */
-.todosServicos h2, p {
-  
-} 
-
-/* Conteuso de todos serviços */
+/* Texto de todos serviços */
 .servicoConteudo {
   height: 250px;
 }
 
 /* Quadro da imagem 1 */
-.servicoImg1 {
+.servicoImg {
   padding-top: 15px;
-  height: 250px;  
-  position: relative;  
-  overflow: hidden; 
-}
-
-/* Quadro da imagem 2 */
-.servicoImg2 {
-  padding-top: 40px;
-  height: 250px;  
-  position: relative;  
-  overflow: hidden; 
-}
-
-/* Quadro da imagem 3 */
-.servicoImg3 {
-  height: 250px;  
-  position: relative;  
-  overflow: hidden; 
-}
-
-/* Tratamento da imagem 1 */
-.servicoImg1 img {
-  padding-left: 20px;
+  height: 250px;   
 }
 
 /*=== fim_SERVIÇOS ===
@@ -179,6 +152,7 @@ footer{
 ****************** inicio_MEDIA QUERIES *****************/
 
 
+
 /***************** fim_MEDIA QUERIES ******************
 **********************************************************/
 
@@ -188,6 +162,15 @@ footer{
 /******************************************************
 ****************** inicio_TIPOGRAFIA *****************/
 
+/* Formatação dos textos da sessão de serviços */
+.servicoConteudo p {
+  font-family: bell mt;
+  font-size: 20px;
+}
+
+.servicoConteudo h2 {
+  color: #495752;
+}
 
 /***************** fim_TIPOGRAFIA ******************
 ******************************************************/
