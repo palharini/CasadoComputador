@@ -123,6 +123,13 @@ nav.navbar-fundomenu{
   height: 250px;   
 }
 
+/* Linha horizontal */
+hr{
+  border-color:#aaa;
+  box-sizing:border-box;
+  width:100%;  
+}
+
 /*=== fim_SERVIÇOS ===
 ================*/
 
