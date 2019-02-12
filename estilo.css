@@ -3,8 +3,8 @@
 
 html,body{
 	height: 100%;
-  background: url(img/imgcapa2.png),
-              linear-gradient(90deg,#9400D3,#00BFFF);
+  background: url(img/teste2.jpg);
+              /*linear-gradient(90deg,#9400D3,#00BFFF);
               background-attachment: fixed;/*dessa forma a imagem não se repete indefinitivamente no background*/
 
 }
@@ -140,7 +140,6 @@ hr{
 === inicio_FALECONOSCO === */
 
 .form {
-  background: white;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 25px;
@@ -197,27 +196,40 @@ footer{
 /******************************************************
 ****************** inicio_TIPOGRAFIA *****************/
 
-/* Formatação dos textos da sessão de serviços */
+/* Formatação dos textos da seção de serviços */
 .servicoConteudo p {
   font-family: bell mt;
   font-size: 20px;
+  color: #495752;
 }
 
 .servicoConteudo h2 {
   color: #495752;
 }
 
+/* fim da seção de serviços */
+
+/* Inicio da seção de fale conosco */
 .form label {
   font-family: bell mt;
   font-size: 20px;
-  color: #495752;
+  color: white;
+}
+
+.form h1 {
+  color: white;
 }
 
 .contato label {
   font-family: bell mt;
   font-size: 20px;
-  color: #495752;
+  color: white;
 }
+
+.contato h3, p {
+  color: white;
+}
+/* fim da seção de fale conosco */
 
 /***************** fim_TIPOGRAFIA ******************
 ******************************************************/
