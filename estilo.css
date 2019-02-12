@@ -3,11 +3,8 @@
 
 html,body{
 	height: 100%;
-<<<<<<< HEAD
+
   background: url(img/imgcapa2.png),   
-=======
-  background: url(img/imgcapa2.png),
->>>>>>> 90f3bf7f578c6487ba5b037452335059adb5e6d9
               linear-gradient(90deg,#9400D3,#00BFFF);
               background-attachment: fixed;/*dessa forma a imagem não se repete indefinitivamente no background*/
 
