@@ -160,6 +160,26 @@ hr{
 
 
 
+/*===================
+=== inicio_QUEMSOMOS === */
+
+.apresentacao {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  line-height: 25px; /*espaço entre linhas*/
+  background: rgba(177, 167, 167, 0.473);
+  border-radius: 20px; /* bordas arredondadas */
+}
+
+/*=== fim_QUEMSOMOS ===
+=================== */
+
+
+
+
 /*===============
 === inicio_RODAPÉ ===*/
 
@@ -230,6 +250,20 @@ footer{
   color: white;
 }
 /* fim da seção de fale conosco */
+
+
+/* inicio da seção de quem somos */
+.apresentacao h1 {
+  color: white;
+  
+}
+
+.apresentacao p {
+  color: white;
+  font-family: bell mt;
+  font-size: 20px;
+}
+/* fim da seção de quem somos */
 
 /***************** fim_TIPOGRAFIA ******************
 ******************************************************/
