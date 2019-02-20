@@ -197,7 +197,7 @@ O data-ride="carousel" atributo informa ao Bootstrap para começar a animação 
 <section id="servicos">
 <!-- ------------------------------------------------------------------------------------------------- -->
   <!-- inicio_Serviço 1 -->
-  <div class="container"> 
+  <div class="container" id="suporte-tecnico"> 
     <div class="row todosServicos">
 
       <!-- inicio_Imagem -->
@@ -219,7 +219,7 @@ O data-ride="carousel" atributo informa ao Bootstrap para começar a animação 
 <!-- ------------------------------------------------------------------------------------------------- -->
 <hr/>
   <!-- inicio_Serviço 2 -->
-  <div class="container"> 
+  <div class="container" id="assistencia"> 
     <div class="row">
 
       <!-- inicio_Imagem (Visivel apenas em telas pequenas)-->
@@ -247,7 +247,7 @@ O data-ride="carousel" atributo informa ao Bootstrap para começar a animação 
 <!-- ------------------------------------------------------------------------------------------------- -->
 <hr/>
   <!-- inicio_Serviço 3 -->
-  <div class="container"> 
+  <div class="container" id="desenvolvimento"> 
     <div class="row">
 
       <!-- inicio_Imagem -->
@@ -381,9 +381,21 @@ O data-ride="carousel" atributo informa ao Bootstrap para começar a animação 
         <div class="col-md-2"> <!-- Div 1.1 -->
           <h3>Empresa</h3>
           <ul class="nav">
-              <li><a href="#">quem somos</a></li>
-              <li><a href="#">suporte técnico</a></li>
-              <li><a href="#">item1</a></li>
+
+
+              <!-- java script para configurar um efeito deslizante em links"Ancora".
+                <li><a href="#aqui vai o id da seção que o link deve ser acionado" class="scrollSuave">Suporte Técnico</a></li>  !-->
+              <li><a href="#suporte-tecnico"class="scrollLink">Suporte Técnico</a></li>
+              <li><a href="#assistencia"class="scrollLink">Assistência Técnica</a></li>
+              <li><a href="#desenvolvimento"class="scrollLink">Desenvolvimento de Websites</a></li>
+              <li><a href="#faleConosco"class="scrollLink">Fale Conosco</a></li>
+
+
+                <!--<li><a href="#ancfaleconosco" class="scrollSuave">Quem Somos</a></li>
+                <li><a href="#ancassistencia" class="scrollSuave">Assistência Técnica</a></li>
+                <li><a href="#ancdesenvolvimento" class="scrollSuave">Desenvolvimento de Websites</a></li> -->
+
+              
           </ul>
         </div> <!-- // Div 1.1 -->
 
@@ -431,6 +443,29 @@ O data-ride="carousel" atributo informa ao Bootstrap para começar a animação 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="bootstrap/js/bootstrap.min.js"></script>
+
+<!-- java script para configurar um efeito deslizante em links"Ancora".
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+<script>
+  var $doc = $('html, body');
+  $('.scrollSuave').click(function() {
+      $doc.animate({
+          scrollTop: $( $.attr(this, 'href') ).offset().top
+      }, 500);
+      return false;
+  });
+</script>!-->
+
+<script>
+      var $doc = $('html, body');
+      $('.scrollLink').click(function() {
+          $doc.animate({
+              scrollTop: $( $.attr(this, 'href') ).offset().top
+          }, 1000);
+          return false;
+      });
+    </script>
 
 </body>
 </html>
