@@ -193,7 +193,9 @@ footer{
 }
 .item-rede-social{
   float: right;
+  
 }
+
 
 /*=== fim_RODAPÉ ===
 ===============*/
@@ -220,6 +222,7 @@ footer{
   .carousel { /*definição do tamanho do carousel em altura e margim*/
     height: 240px;
   }
+
 }
 
 
@@ -299,6 +302,15 @@ footer{
   color: white;
   font-family: bell mt;
   font-size: 20px;
+}
+
+#rodape h3{
+  color: #919496;
+  font-size: 12px;
+  text-transform: uppercase;
+
+
+
 }
 /* fim da seção de quem somos */
 
