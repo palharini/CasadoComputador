@@ -39,6 +39,8 @@ nav.navbar-fundomenu{
 /*** Itens do menu (cor fixa) ***/
 .navbar-inverse .navbar-nav>li>a, footer .nav a {  
 	color: white;
+
+
 }
 
 /*** Itens do menu (cor ao passar do mouse) ***/
@@ -46,6 +48,7 @@ nav.navbar-fundomenu{
 	color: orange;
   background: none;
 }
+
 
 /*** Itens do dropdown (apenas em janela web) ***/ 
 .navbar-inverse .navbar-nav>.dropdown>ul>li>a:hover {
